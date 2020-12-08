@@ -2,33 +2,77 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>HLJJ</title>
   
-  
+  <subtitle>hi world!</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-06T16:40:12.000Z</updated>
+  <updated>2020-12-08T10:17:38.000Z</updated>
   <id>http://example.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>HLJJ</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>HELLO WORLD</title>
-    <link href="http://example.com/2020/12/07/2020_12_7/"/>
-    <id>http://example.com/2020/12/07/2020_12_7/</id>
-    <published>2020-12-06T16:21:41.000Z</published>
-    <updated>2020-12-06T16:40:12.000Z</updated>
+    <title>typora 使用心得</title>
+    <link href="http://example.com/2020/12/08/typora-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/"/>
+    <id>http://example.com/2020/12/08/typora-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</id>
+    <published>2020-12-08T08:29:41.000Z</published>
+    <updated>2020-12-08T10:17:38.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="搭建-blog：hexo-github"><a href="#搭建-blog：hexo-github" class="headerlink" title="搭建 blog：hexo  github"></a>搭建 blog：hexo  github</h1>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-添加页内跳转-页内超链接："><a href="#1-添加页内跳转-页内超链接：" class="headerlink" title="1 添加页内跳转/页内超链接："></a>1 添加页内跳转/页内超链接：</h2><ol><li><p>利用Markdown 语法实现：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   [<span class="string">标题一</span>](<span class="link">#标题一</span>)</span><br><span class="line">   #标题一</span><br><span class="line">   [<span class="string">标题二</span>](<span class="link">#标题二</span>)</span><br><span class="line"><span class="section">##标题二</span></span><br></pre></td></tr></table></figure><blockquote><p><strong>效果不是很明显的话，就是离得太近了，拉远点就好。</strong></p></blockquote></li><li><p>利用HTML语法实现：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#233&quot;</span>&gt;</span>我想笑<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">name</span> = <span class="string">&quot;233&quot;</span>&gt;</span>233<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure><blockquote><p>以上两种方法记得都要<strong>按住</strong><kbd>Ctrl</kbd><strong>并点击</strong></p></blockquote></li></ol><h2 id="2-添加网页链接："><a href="#2-添加网页链接：" class="headerlink" title="2 添加网页链接："></a>2 添加网页链接：</h2><ol><li><p>行内式：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">欢迎来我的[<span class="string">Github</span>](<span class="link">https://www.github.com/HLJJ</span>)主页做客</span><br></pre></td></tr></table></figure><p>显示效果如下：</p><p>欢迎来到我的<a href="https://www.github.com/HLJJ">Github</a> 主页做客</p></li><li><p>参考式：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">我常用的视频网站有[<span class="string">bilibili</span>][<span class="symbol">1</span>]、[<span class="string">YouTube</span>][<span class="symbol">2</span>]等。</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">https://www.bilibili.com/</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">https://www.youtube.com/</span></span><br></pre></td></tr></table></figure><p>显示效果如下：</p><p>我常用的视频网站有[bilibili][1]、[YouTube][2]等。</p><p>[1]: <a href="https://www.bilibili.com/">https://www.bilibili.com/</a><br>[2]:<a href="https://www.youtube.com/">https://www.youtube.com/</a></p></li><li></li></ol><h2 id="3-回车后的自动缩进问题-typora的层次结构-："><a href="#3-回车后的自动缩进问题-typora的层次结构-：" class="headerlink" title="3 回车后的自动缩进问题 /typora的层次结构 ："></a>3 回车后的自动缩进问题 /typora的层次结构 ：</h2><ul><li><p>用<kbd>Ctrl</kbd> + <kbd>]</kbd> 或<kbd>[</kbd>可以来该变该行的层次 </p><blockquote><p>可以用<kbd>Ctrl</kbd> + <kbd>/</kbd> 进入源代码模式查看每行前的小圆点的数量就代表层次的高低。</p></blockquote></li></ul><h2 id="4-点击导出pdf无反应（已安装pandoc）："><a href="#4-点击导出pdf无反应（已安装pandoc）：" class="headerlink" title="4 点击导出pdf无反应（已安装pandoc）："></a>4 点击导出pdf无反应（已安装pandoc）：</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;搭建-blog：hexo-github&quot;&gt;&lt;a href=&quot;#搭建-blog：hexo-github&quot; class=&quot;headerlink&quot; title=&quot;搭建 blog：hexo  github&quot;&gt;&lt;/a&gt;搭建 blog：hexo  github&lt;/h1&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;1-添加页内跳转-页内超链接：&quot;&gt;&lt;a href=&quot;#1-添加页内跳转-页内超链接：&quot; class=&quot;headerlink&quot; title=&quot;1 添加页内跳转/页内超链接：&quot;&gt;&lt;/a&gt;1 添加页内跳转/页内超链接：&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;利用Markdow</summary>
+      
+    
+    
+    
+    
+    <category term="typora" scheme="http://example.com/tags/typora/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>win 10 使用过程中的bug(不爽的地方)</title>
+    <link href="http://example.com/2020/12/07/win-10-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84bug-%E4%B8%8D%E7%88%BD%E7%9A%84%E5%9C%B0%E6%96%B9/"/>
+    <id>http://example.com/2020/12/07/win-10-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84bug-%E4%B8%8D%E7%88%BD%E7%9A%84%E5%9C%B0%E6%96%B9/</id>
+    <published>2020-12-07T12:22:00.000Z</published>
+    <updated>2020-12-08T08:48:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-修改微软拼音输入法的默认为英文："><a href="#1-修改微软拼音输入法的默认为英文：" class="headerlink" title="1 修改微软拼音输入法的默认为英文："></a>1 修改微软拼音输入法的默认为英文：</h2><ul><li>可以在设置-时间和语言-语言-中文(选项)-微软拼音(选项)-常规中更改默认输入语言为英文。</li></ul><h2 id="2-中英文标点切换："><a href="#2-中英文标点切换：" class="headerlink" title="2 中英文标点切换："></a>2 中英文标点切换：</h2><ul><li>参考上文，在设置-时间和语言-语言-中文(选项)-微软拼音(选项)中设置，默认快捷键为<kbd>Ctrl</kbd>+ <kbd>.</kbd> </li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;1-修改微软拼音输入法的默认为英文：&quot;&gt;&lt;a href=&quot;#1-修改微软拼音输入法的默认为英文：&quot; class=&quot;headerlink&quot; title=&quot;1 修改微软拼音输入法的默认为英文：&quot;&gt;&lt;/a&gt;1 修改微软拼音输入法的默认为英文：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo + github 搭建个人博客</title>
+    <link href="http://example.com/2020/12/07/hexo-github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/2020/12/07/hexo-github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-12-07T12:09:41.000Z</published>
+    <updated>2020-12-08T08:55:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前期准备："><a href="#前期准备：" class="headerlink" title="前期准备："></a>前期准备：</h1><h2 id="Github-相关："><a href="#Github-相关：" class="headerlink" title="Github 相关："></a>Github 相关：</h2><ul><li><p>注册账号</p><p>&lt;a href= </p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前期准备：&quot;&gt;&lt;a href=&quot;#前期准备：&quot; class=&quot;headerlink&quot; title=&quot;前期准备：&quot;&gt;&lt;/a&gt;前期准备：&lt;/h1&gt;&lt;h2 id=&quot;Github-相关：&quot;&gt;&lt;a href=&quot;#Github-相关：&quot; class=&quot;headerlink&quot; </summary>
       
     
     
